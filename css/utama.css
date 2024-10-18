@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e5ddd5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #128c7e;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.chat-item {
+  display: flex; /* Menggunakan Flexbox untuk tata letak */
+  align-items: center; /* Memastikan semua item sejajar secara vertikal */
+  padding: 10px; /* Tambahkan padding jika perlu */
+  border-bottom: 1px solid #f0f0f0; /* Garis pemisah */
+}
+
+.chat-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-avatar img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.chat-details {
+  margin-left: 10px; /* Ruang antara foto dan teks */
+}
+
+.chat-name {
+  margin: 0; /* Menghilangkan margin default */
+  font-size: 16px; /* Ukuran font untuk nama */
+}
+
+.last-seen {
+  margin: 0; /* Menghilangkan margin default */
+  font-size: 14px; /* Ukuran font untuk waktu terakhir dilihat */
+  color: #555; /* Warna teks untuk waktu terakhir dilihat */
+}
+
+.chat-details h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.chat-details p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.chat-window {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  display: block; /* Mengubah menjadi block agar tampil di bawah satu sama lain */
+}
+
+.received {
+  background-color: #fff;
+  align-self: flex-start; /* Pesan yang diterima di sebelah kiri */
+}
+
+.sent {
+  background-color: #dcf8c6;
+  align-self: flex-end; /* Pesan yang dikirim di sebelah kanan */
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.input-area button {
+  background-color: #128c7e;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}

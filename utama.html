@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tampilan WA Sederhana</title>
+    <link rel="stylesheet" href="css/utama.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>WhatsApp Clone</h1>
+      </header>
+      <div class="chat-list">
+        <div class="chat-item">
+          <div class="chat-avatar">
+            <img src="img/profil.JPG" alt="profil" />
+          </div>
+          <div class="chat-details">
+            <h2 class="chat-name">Firman</h2>
+            <p class="last-seen">Terakhir dilihat: 10:30</p>
+          </div>
+        </div>
+      </div>
+      <div class="chat-window">
+        <div class="messages" id="messages">
+          <div class="message received">Halo!</div>
+          <div class="message sent">Hai! Apa kabar?</div>
+        </div>
+        <div class="input-area">
+          <input type="text" id="inputMessage" placeholder="Ketik pesan..." />
+          <button id="sendButton">Kirim</button>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/utama.js"></script>
+  </body>
+</html>
